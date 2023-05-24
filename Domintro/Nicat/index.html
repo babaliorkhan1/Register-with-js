@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cardo:wght@400;700&family=Roboto+Mono:wght@400;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./style.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="root">
+    <div id="main">
+      <h2>Nijat <span>Note</span>Pad</h2>
+      <input
+        type="text"
+        id="titleInput"
+        maxlength="22"
+        placeholder="Note Title"
+      />
+      <textarea id="noteInput" rows="8" placeholder="Write note..."></textarea>
+      <div class="selectcolor">
+        <div id="colors">
+          <div class="color" id="red"></div>
+          <div class="color" id="purple"></div>
+          <div class="color" id="blue"></div>
+          <div class="color" id="yellow"></div>
+          <div class="color" id="green"></div>
+        </div>
+        <button id="save">Save ✓</button>
+      </div>
+      <div id="search">
+        <input type="text" id="searchInput" placeholder="Write to search.." />
+        <img src="./Image/search-icon.svg" alt="" />
+      </div>
+      <div id="cards">
+        <div class="card" id="default">
+          <div>
+            <h4>Add a title to your note</h4>
+            <img src="./Image/trash-icon.svg" alt="Trash Icon" />
+          </div>
+          <p>
+            You can choose a color while adding notes. The notes you add will not be lost even if you refresh the page.
+          </p>
+        </div>
+      </div>
+    </div>
+    <footer>
+      <div class="links">
+        <a href="https://github.com/NijatS">
+          <img src="./Image/github.svg" alt="" />
+        </a>
+        <a href="https://www.linkedin.com/in/nijat-soltanov-023660235/">
+          <img src="./Image/linkedln.svg" alt="" />
+        </a>
+        <a href="https://instagram.com/nijatsoltanov_?igshid=ZWIzMWE5ZmU3Zg==">
+          <img src="./Image/instagram.svg" alt="" />
+        </a>
+        <a href="https://www.facebook.com/nicat.soltanov.940/">
+          <img src="./Image/facebook.svg" alt="" />
+        </a>
+        <a href="#">
+          <img src="./Image/twitter.svg" alt="" />
+        </a>
+      </div>
+      <div class="signature">
+        <a href="https://notepadnijat.netlify.app/"
+          >Designed & Built by
+          <br />
+          <span>Nijat Soltanov</span>
+        </a>
+      </div>
+    </footer>
+  </div>
+    <script src="./index.js"></script>
+  </body>
+</html>

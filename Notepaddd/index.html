@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            margin: 20px;
+        }
+        .color{
+            width: 20px;
+            height: 20px;
+            display: inline-block;
+            border-radius: 50%;
+            margin-top: 10px;
+            border: 1px solid transparent;
+        }
+        #color1{
+          background-color:#dc143c ;
+        }
+        #color2{
+            background-color: #00ffff;
+        }
+        #color3{
+            background-color: #0000ff;
+        }
+        #color4{
+            background-color: #7fff00;
+        }
+        .notes{
+            width: 80%;
+            display: flex;
+            flex-wrap: wrap;
+            margin: auto;
+        }
+        .note{
+            width: 100px;
+            height: 100px;
+            border: 2px dashed black;
+        }
+    </style>
+</head>
+<body>
+    <input id="input1" type="text" placeholder="Note title">
+    <div>
+        <span class="color" id="color1"></span>
+        <span class="color" id="color2"></span>
+        <span class="color" id="color3"></span>
+        <span class="color" id="color4"></span>
+    </div>
+    <button id="savebtn">Save</button>
+    <div class="notes"></div>
+
+    <script src="./index.js"></script>
+</body>
+</html>

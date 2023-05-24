@@ -1,0 +1,54 @@
+.card {
+  width: 200px;
+  height: 100vh;
+  position: absolute;
+  background-color: royalblue;
+  top: 0;
+  left: 0;
+}
+.card div:first-child {
+  margin: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.card div:first-child svg:first-child {
+  width: 40px;
+  height: 40px;
+}
+.card div:first-child svg:nth-child(2) {
+  width: 30px;
+  height: 30px;
+}
+.card .inbox {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  -moz-column-gap: 10px;
+       column-gap: 10px;
+  margin-left: 10px;
+}
+.card .inbox img {
+  width: 30px;
+  height: 30px;
+}
+.card .inbox p {
+  font-size: 18px;
+}
+
+.message {
+  width: 90%;
+  height: 50px;
+  background-color: gray;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+  -moz-column-gap: 10px;
+       column-gap: 10px;
+  margin-bottom: 20px;
+}
+.message a {
+  text-decoration: none;
+  color: black;
+}

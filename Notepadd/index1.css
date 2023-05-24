@@ -1,0 +1,333 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #ede7f6;
+  box-sizing: border-box;
+  font-family: Roboto Mono, monospace;
+  height: 100vh;
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+}
+
+#root {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+#root .main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+#root .main #input1 {
+  width: 30%;
+  padding: 10px;
+  border: 1px solid rgb(126, 87, 194);
+  outline-color: rgb(81, 45, 168);
+  border-radius: 7px;
+}
+@media screen and (max-width: 1400px) {
+  #root .main #input1 {
+    width: 40%;
+  }
+}
+@media screen and (max-width: 1100px) {
+  #root .main #input1 {
+    width: 50%;
+  }
+}
+@media screen and (max-width: 850px) {
+  #root .main #input1 {
+    width: 70%;
+  }
+}
+#root .main #textarea1 {
+  width: 30%;
+  padding: 10px;
+  border: 1px solid rgb(126, 87, 194);
+  outline-color: rgb(81, 45, 168);
+  border-radius: 7px;
+  margin-top: 25px;
+}
+@media screen and (max-width: 1400px) {
+  #root .main #textarea1 {
+    width: 40%;
+  }
+}
+@media screen and (max-width: 1100px) {
+  #root .main #textarea1 {
+    width: 50%;
+  }
+}
+@media screen and (max-width: 850px) {
+  #root .main #textarea1 {
+    width: 70%;
+  }
+}
+#root .main .selectcolors {
+  display: flex;
+  justify-content: space-between;
+  width: 30%;
+  margin: 10px auto;
+  text-align: left;
+}
+@media screen and (max-width: 1400px) {
+  #root .main .selectcolors {
+    width: 40%;
+  }
+}
+@media screen and (max-width: 1100px) {
+  #root .main .selectcolors {
+    width: 50%;
+  }
+}
+@media screen and (max-width: 850px) {
+  #root .main .selectcolors {
+    width: 70%;
+  }
+}
+#root .main .selectcolors #colors {
+  display: flex;
+}
+#root .main .selectcolors #colors div:first-child {
+  background-color: rgb(240, 98, 146);
+  width: 40px;
+  height: 40px;
+  margin-right: 15px;
+  border-radius: 50px;
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  transition: all 0.2s ease 0s;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#root .main .selectcolors #colors div:first-child > span {
+  display: none;
+}
+#root .main .selectcolors #colors div:first-child:hover {
+  opacity: 0.8;
+  transform: translateY(-1px);
+}
+#root .main .selectcolors #colors div:nth-child(2) {
+  background-color: rgb(186, 104, 200);
+  width: 40px;
+  height: 40px;
+  margin-right: 15px;
+  border-radius: 50px;
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  transition: all 0.2s ease 0s;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#root .main .selectcolors #colors div:nth-child(2) > span {
+  display: none;
+}
+#root .main .selectcolors #colors div:nth-child(2):hover {
+  opacity: 0.8;
+  transform: translateY(-1px);
+}
+#root .main .selectcolors #colors div:nth-child(3) {
+  background-color: rgb(79, 195, 247);
+  width: 40px;
+  height: 40px;
+  margin-right: 15px;
+  border-radius: 50px;
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  transition: all 0.2s ease 0s;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#root .main .selectcolors #colors div:nth-child(3) > span {
+  display: none;
+}
+#root .main .selectcolors #colors div:nth-child(3):hover {
+  opacity: 0.8;
+  transform: translateY(-1px);
+}
+#root .main .selectcolors #colors div:nth-child(4) {
+  background-color: rgb(255, 213, 79);
+  width: 40px;
+  height: 40px;
+  margin-right: 15px;
+  border-radius: 50px;
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  transition: all 0.2s ease 0s;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#root .main .selectcolors #colors div:nth-child(4) > span {
+  display: none;
+}
+#root .main .selectcolors #colors div:nth-child(4):hover {
+  opacity: 0.8;
+  transform: translateY(-1px);
+}
+#root .main .selectcolors #colors div:nth-child(5) {
+  background-color: rgb(174, 213, 129);
+  width: 40px;
+  height: 40px;
+  margin-right: 15px;
+  border-radius: 50px;
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  transition: all 0.2s ease 0s;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#root .main .selectcolors #colors div:nth-child(5) > span {
+  display: none;
+}
+#root .main .selectcolors #colors div:nth-child(5):hover {
+  opacity: 0.8;
+  transform: translateY(-1px);
+}
+#root .main .selectcolors #button1 {
+  padding: 10px 15px;
+  background-color: rgb(126, 87, 194);
+  border-radius: 10px;
+  border: 1px;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+  font-weight: 500;
+  color: white;
+  transition: all 0.2s ease 0s;
+  cursor: pointer;
+  box-sizing: border-box;
+}
+#root .main .selectcolors #button1:hover {
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 10px 20px 5px, rgba(0, 0, 0, 0.3) 0px 5px 10px 2px;
+}
+#root .main .search {
+  position: relative;
+  width: 32%;
+  margin: 20px auto 5px;
+}
+@media screen and (max-width: 1400px) {
+  #root .main .search {
+    width: 40%;
+  }
+}
+@media screen and (max-width: 1100px) {
+  #root .main .search {
+    width: 50%;
+  }
+}
+@media screen and (max-width: 850px) {
+  #root .main .search {
+    width: 70%;
+  }
+}
+#root .main .search #searchinput {
+  width: 100%;
+  padding: 10px;
+  box-sizing: border-box;
+  border: 1px solid rgb(126, 87, 194);
+  outline-color: rgb(81, 45, 168);
+  border-radius: 7px;
+}
+#root .main .search img {
+  height: 16px;
+  position: absolute;
+  right: 12px;
+  font-size: 22px;
+  top: 7px;
+}
+#root .main .cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  width: 70%;
+  height: -moz-fit-content;
+  height: fit-content;
+  margin: 20px auto;
+}
+@media screen and (max-width: 1400px) {
+  #root .main .cards {
+    width: 75%;
+  }
+}
+@media screen and (max-width: 1100px) {
+  #root .main .cards {
+    width: 80%;
+  }
+}
+@media screen and (max-width: 850px) {
+  #root .main .cards {
+    width: 85%;
+  }
+}
+#root .main .cards .card {
+  width: 300px;
+  height: 350px;
+  display: inline-block;
+  border-radius: 15px;
+  border: 2px dashed rgb(174, 213, 129);
+  margin: 20px 20px 10px;
+}
+@media screen and (max-width: 850px) {
+  #root .main .cards .card {
+    width: 280px;
+    height: 320px;
+    margin: 15px;
+  }
+}
+#root .main .cards .card #cardTitle {
+  margin: 0px;
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+  background-color: rgba(174, 213, 129, 0.4);
+  padding: 10px;
+  position: relative;
+}
+#root .main .cards .card #cardTitle #image {
+  width: 16px;
+  height: 16px;
+  cursor: pointer;
+  font-size: 20px;
+  position: absolute;
+  right: 10px;
+  top: 11px;
+}
+#root p {
+  padding: 10px;
+  height: 76%;
+  text-align: left;
+  margin: 0px;
+  overflow: auto;
+  font-size: 14px;
+}
+
+#footer {
+  width: 100%;
+  background-color: rgb(216, 181, 228);
+  padding: 5px 0px 50px;
+  margin-top: auto;
+}
+#footer .links {
+  width: 50%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 40px;
+  text-align: center;
+}
+#footer .links a {
+  text-decoration: none;
+  color: black;
+}
+#footer .links a img {
+  background-color: #fff;
+  border-radius: 50%;
+  box-shadow: 0 2px 4px 0 hsla(0, 0%, 100%, 0.82), 0 2px 16px 0 #fff;
+  color: rgba(0, 0, 0, 0.8);
+  font-size: 40px;
+  margin: 10px;
+  padding: 5px;
+  transition: color 0.2s, box-shadow 1s;
+}

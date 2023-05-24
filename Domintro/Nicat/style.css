@@ -1,0 +1,523 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Roboto Mono, monospace;
+  background-color: #ede7f6;
+  height: 100vh;
+}
+
+.root {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+.root #main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.root #main h2 {
+  font-size: 1.5em;
+  margin: 20px 0;
+  font-weight: bold;
+}
+.root #main h2 span {
+  color: rgb(126, 87, 194);
+}
+.root #main input {
+  box-sizing: initial;
+  width: 30%;
+  padding: 10px;
+  resize: none;
+  border: 1px solid rgb(126, 87, 194);
+  outline-color: rgb(81, 45, 168);
+  border-radius: 7px;
+}
+@media screen and (max-width: 1400px) {
+  .root #main input {
+    width: 40%;
+  }
+}
+@media screen and (max-width: 1100px) {
+  .root #main input {
+    width: 50%;
+  }
+}
+@media screen and (max-width: 850px) {
+  .root #main input {
+    width: 70%;
+  }
+}
+@media screen and (max-width: 600px) {
+  .root #main input {
+    width: 90%;
+  }
+}
+.root #main textarea {
+  margin-top: 25px;
+  box-sizing: initial;
+  width: 30%;
+  padding: 10px;
+  resize: none;
+  border: 1px solid rgb(126, 87, 194);
+  outline-color: rgb(81, 45, 168);
+  border-radius: 7px;
+}
+@media screen and (max-width: 1400px) {
+  .root #main textarea {
+    width: 40%;
+  }
+}
+@media screen and (max-width: 1100px) {
+  .root #main textarea {
+    width: 50%;
+  }
+}
+@media screen and (max-width: 850px) {
+  .root #main textarea {
+    width: 70%;
+  }
+}
+@media screen and (max-width: 600px) {
+  .root #main textarea {
+    width: 90%;
+  }
+}
+.root #main .selectcolor {
+  width: 30%;
+  margin: 10px auto;
+  display: flex;
+  justify-content: space-between;
+}
+@media screen and (max-width: 1400px) {
+  .root #main .selectcolor {
+    width: 40%;
+  }
+}
+@media screen and (max-width: 1100px) {
+  .root #main .selectcolor {
+    width: 50%;
+  }
+}
+@media screen and (max-width: 850px) {
+  .root #main .selectcolor {
+    width: 70%;
+  }
+}
+@media screen and (max-width: 600px) {
+  .root #main .selectcolor {
+    width: 90%;
+  }
+}
+.root #main .selectcolor button {
+  padding: 10px 15px;
+  background-color: rgb(126, 87, 194);
+  border-radius: 10px;
+  border: 1px;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+  font-weight: 500;
+  color: white;
+  transition: all 0.2s ease 0s;
+  cursor: pointer;
+  box-sizing: border-box;
+}
+.root #main .selectcolor button:hover {
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 10px 20px 5px, rgba(0, 0, 0, 0.3) 0px 5px 10px 2px;
+}
+.root #main .selectcolor #colors {
+  display: flex;
+}
+.root #main .selectcolor #colors .color:first-child {
+  box-sizing: initial;
+  width: 40px;
+  height: 40px;
+  margin-right: 15px;
+  border-radius: 50px;
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  transition: all 0.2s ease 0s;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgb(240, 98, 146);
+}
+.root #main .selectcolor #colors .color:first-child > span {
+  display: none;
+}
+.root #main .selectcolor #colors .color:first-child:hover {
+  opacity: 0.8;
+  transform: translateY(-1px);
+}
+@media only screen and (max-width: 500px) {
+  .root #main .selectcolor #colors .color:first-child {
+    width: 30px;
+    height: 30px;
+    margin-right: 10px;
+    transform: translateY(3px);
+  }
+}
+.root #main .selectcolor #colors .color:nth-child(2) {
+  box-sizing: initial;
+  width: 40px;
+  height: 40px;
+  margin-right: 15px;
+  border-radius: 50px;
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  transition: all 0.2s ease 0s;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgb(186, 104, 200);
+}
+.root #main .selectcolor #colors .color:nth-child(2) > span {
+  display: none;
+}
+.root #main .selectcolor #colors .color:nth-child(2):hover {
+  opacity: 0.8;
+  transform: translateY(-1px);
+}
+@media only screen and (max-width: 500px) {
+  .root #main .selectcolor #colors .color:nth-child(2) {
+    width: 30px;
+    height: 30px;
+    margin-right: 10px;
+    transform: translateY(3px);
+  }
+}
+.root #main .selectcolor #colors .color:nth-child(3) {
+  box-sizing: initial;
+  width: 40px;
+  height: 40px;
+  margin-right: 15px;
+  border-radius: 50px;
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  transition: all 0.2s ease 0s;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgb(79, 195, 247);
+}
+.root #main .selectcolor #colors .color:nth-child(3) > span {
+  display: none;
+}
+.root #main .selectcolor #colors .color:nth-child(3):hover {
+  opacity: 0.8;
+  transform: translateY(-1px);
+}
+@media only screen and (max-width: 500px) {
+  .root #main .selectcolor #colors .color:nth-child(3) {
+    width: 30px;
+    height: 30px;
+    margin-right: 10px;
+    transform: translateY(3px);
+  }
+}
+.root #main .selectcolor #colors .color:nth-child(4) {
+  box-sizing: initial;
+  width: 40px;
+  height: 40px;
+  margin-right: 15px;
+  border-radius: 50px;
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  transition: all 0.2s ease 0s;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgb(255, 213, 79);
+}
+.root #main .selectcolor #colors .color:nth-child(4) > span {
+  display: none;
+}
+.root #main .selectcolor #colors .color:nth-child(4):hover {
+  opacity: 0.8;
+  transform: translateY(-1px);
+}
+@media only screen and (max-width: 500px) {
+  .root #main .selectcolor #colors .color:nth-child(4) {
+    width: 30px;
+    height: 30px;
+    margin-right: 10px;
+    transform: translateY(3px);
+  }
+}
+.root #main .selectcolor #colors .color:last-child {
+  box-sizing: initial;
+  width: 40px;
+  height: 40px;
+  margin-right: 15px;
+  border-radius: 50px;
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  transition: all 0.2s ease 0s;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgb(174, 213, 129);
+}
+.root #main .selectcolor #colors .color:last-child > span {
+  display: none;
+}
+.root #main .selectcolor #colors .color:last-child:hover {
+  opacity: 0.8;
+  transform: translateY(-1px);
+}
+@media only screen and (max-width: 500px) {
+  .root #main .selectcolor #colors .color:last-child {
+    width: 30px;
+    height: 30px;
+    margin-right: 10px;
+    transform: translateY(3px);
+  }
+}
+.root #main #search {
+  position: relative;
+  width: 32%;
+  margin: 20px auto 5px;
+}
+.root #main #search input {
+  width: 100%;
+  padding: 10px;
+  box-sizing: border-box;
+  border: 1px solid rgb(126, 87, 194);
+  outline-color: rgb(81, 45, 168);
+  border-radius: 7px;
+}
+.root #main #search img {
+  position: absolute;
+  right: 12px;
+  font-size: 22px;
+  top: 7px;
+  height: 1em;
+  width: 1em;
+}
+@media only screen and (max-width: 1400px) {
+  .root #main #search {
+    width: 42%;
+  }
+}
+@media only screen and (max-width: 1100px) {
+  .root #main #search {
+    width: 52%;
+  }
+}
+@media only screen and (max-width: 850px) {
+  .root #main #search {
+    width: 72%;
+  }
+}
+@media only screen and (max-width: 600px) {
+  .root #main #search {
+    width: 90%;
+  }
+}
+.root #main #cards {
+  width: 70%;
+  height: -moz-fit-content;
+  height: fit-content;
+  margin: 20px auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+@media screen and (max-width: 1400px) {
+  .root #main #cards {
+    width: 75%;
+  }
+}
+@media screen and (max-width: 1100px) {
+  .root #main #cards {
+    width: 80%;
+  }
+}
+@media screen and (max-width: 850px) {
+  .root #main #cards {
+    width: 85%;
+  }
+}
+@media screen and (max-width: 600px) {
+  .root #main #cards {
+    width: 90%;
+  }
+}
+.root #main #cards .card {
+  width: 300px;
+  height: 350px;
+  display: inline-block;
+  border-radius: 15px;
+  border: 2px dashed rgb(240, 98, 146);
+  margin: 20px 20px 10px;
+}
+@media only screen and (max-width: 850px) {
+  .root #main #cards .card {
+    width: 280px;
+    height: 320px;
+    margin: 15px;
+  }
+}
+@media only screen and (max-width: 600px) {
+  .root #main #cards .card {
+    width: 260px;
+    height: 300px;
+    margin: 10px;
+  }
+}
+@media only screen and (max-width: 400px) {
+  .root #main #cards .card {
+    width: 240px;
+    height: 280px;
+    margin: 10px 0px;
+  }
+}
+.root #main #cards .card div {
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+  background-color: rgba(240, 98, 146, 0.4);
+  text-align: left;
+  padding: 10px;
+  position: relative;
+}
+@media only screen and (max-width: 850px) {
+  .root #main #cards .card div h4 {
+    font-size: 15px;
+  }
+}
+@media only screen and (max-width: 600px) {
+  .root #main #cards .card div h4 {
+    font-size: 14px;
+  }
+}
+@media only screen and (max-width: 400px) {
+  .root #main #cards .card div h4 {
+    font-size: 13px;
+  }
+}
+.root #main #cards .card div img {
+  cursor: pointer;
+  font-size: 20px;
+  position: absolute;
+  right: 10px;
+  top: 11px;
+  width: 20px;
+  height: 20px;
+}
+.root #main #cards .card p {
+  padding: 10px;
+  height: 76%;
+  overflow: auto;
+  font-size: 14px;
+}
+@media only screen and (max-width: 850px) {
+  .root #main #cards .card p {
+    font-size: 13px;
+  }
+}
+@media only screen and (max-width: 600px) {
+  .root #main #cards .card p {
+    font-size: 12px;
+  }
+}
+@media only screen and (max-width: 400px) {
+  .root #main #cards .card p {
+    font-size: 11px;
+  }
+}
+.root footer {
+  width: 100%;
+  background-color: rgb(216, 181, 228);
+  padding: 5px 0px 50px;
+  margin-top: auto;
+}
+.root footer .links {
+  width: 50%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 40px;
+  text-align: center;
+}
+@media screen and (max-width: 1400px) {
+  .root footer .links {
+    width: 60%;
+  }
+}
+@media screen and (max-width: 1100px) {
+  .root footer .links {
+    width: 70%;
+    margin-top: 30px;
+  }
+}
+@media screen and (max-width: 800px) {
+  .root footer .links {
+    width: 80%;
+    margin-top: 20px;
+  }
+}
+@media screen and (max-width: 600px) {
+  .root footer .links {
+    width: 90%;
+    margin-top: 15px;
+  }
+}
+.root footer .links a {
+  text-decoration: none;
+  color: black;
+}
+.root footer .links a img {
+  background-color: #fff;
+  border-radius: 50%;
+  box-shadow: 0 2px 4px 0 hsla(0, 0%, 100%, 0.82), 0 2px 16px 0 #fff;
+  color: rgba(0, 0, 0, 0.8);
+  font-size: 40px;
+  margin: 10px;
+  padding: 5px;
+  transition: 0.2s color, box-shadow 1s;
+  height: 1em;
+  width: 1em;
+  box-sizing: initial;
+}
+@media only screen and (max-width: 800px) {
+  .root footer .links a img {
+    margin: 5px;
+  }
+}
+@media only screen and (max-width: 600px) {
+  .root footer .links a img {
+    font-size: 35px;
+    margin: 4px;
+  }
+}
+@media only screen and (max-width: 400px) {
+  .root footer .links a img {
+    font-size: 32px;
+    margin: 3px;
+  }
+}
+.root footer .links a img:hover {
+  opacity: 1;
+  box-shadow: hsla(0, 0%, 100%, 0.82) 0px 22px 70px 4px;
+}
+.root footer .signature a {
+  display: block;
+  font-size: 1.4rem;
+  margin-top: 15px;
+  color: rgba(0, 0, 0, 0.4);
+  text-decoration: none;
+  transition: all 0.2s ease 0s;
+  padding: 5px;
+  text-align: center;
+}
+@media screen and (max-width: 800px) {
+  .root footer .signature a {
+    margin-top: 10px;
+    font-size: 1.3rem;
+  }
+}
+@media screen and (max-width: 600px) {
+  .root footer .signature a {
+    font-size: 1.1rem;
+  }
+}
+.root footer .signature a span {
+  font-size: 1rem;
+}

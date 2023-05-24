@@ -1,0 +1,28 @@
+.sidebar{
+    width: 200px;
+    min-height:100vh;
+    background-color: purple;
+    position: absolute;
+    top: 0;
+    left: -200px;
+    transition: 1s;
+
+    .links{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        row-gap: 30px;
+        height: 100vh;
+        justify-content: center;
+        a{
+            text-decoration: none;
+            color: white;
+            font-size: 15px;
+            letter-spacing: 1px;
+            &:hover{
+                color: red;
+            }
+        }
+    }
+
+}
